@@ -1,0 +1,207 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+$gtMobile: min-width 58em 12 !default;
+$cream: #f9eed3;
+$green: #9fb083;
+$brown: #a47c64;
+$blue: #668b8a;
+
+body {
+  font-family:sans-serif;
+  background-color:$cream;
+  font-family: 'Open Sans', sans-serif;
+  margin:0;
+  background-image: url('../assets/bg_paper.png');
+}
+
+header{
+  width:100%;
+  background-color: $brown;
+  background-image: url('../assets/header_hero.png');
+  background-size: cover;
+  vertical-align:center;
+  text-align:center;
+  padding:2em 0em;
+  nav {
+    @include media($gtMobile){
+      width: 25em;
+    }
+    text-align:center;
+    display:inline-block;
+    width: 100%;
+    vertical-align:middle;
+    ul {
+      width: 100%;
+      padding:0px;
+      display:table;
+      list-style:none;
+      @include clearfix;
+    }
+    a {
+      text-transform:uppercase;
+      color:white;
+    }
+    li {
+      @include media($gtMobile){
+        width: 10em;
+        float:left;
+        display:table-cell;
+        table-layout:fixed;
+      }
+      margin: 0 0.5em 0.5em 0;
+      display:inline-block;
+      width: 10em;
+      background-color:$green;
+      text-align:center;
+      padding:2em;
+      box-shadow: 0.25em 0.25em 0px 0px rgba(0,0,0,0.5);
+      &:hover {
+        background-color:$blue;
+      }
+    }
+  }
+  #header-title {
+    @include media($gtMobile){
+      width:30em;
+      text-align:left;
+      margin-right:1em;
+    }
+    width: 100%;
+    display:inline-block;
+    background-color: $blue;
+    color:white;
+    padding:2em 2em;
+    vertical-align: top;
+    text-align:center;
+    box-shadow: 0.25em 0.25em 0px 0px rgba(0,0,0,0.5);
+    h1 {
+      @include media($gtMobile){
+        font-size: 4em;
+      }
+      font-size:3em;
+      margin:0;
+      line-height:1em;
+    }
+  }
+}
+a {
+  text-decoration:none;
+  color:white;
+}
+
+h1 {
+  font-family:'Nova Mono', monospace;
+}
+section {
+  display:block;
+  padding: 2em 0em;
+  &#about {
+    background-color:$green;
+  }
+  &#contact{
+    background-color:$blue;
+    padding-bottom:5em;
+  }
+  h1 {
+    background-color: $brown;
+    box-shadow: 0.25em 0.25em 0px 0px rgba(0,0,0,0.5);
+    display:inline;
+    padding: 0.25em 1em;
+    color:white;
+    font-size: 2em;
+  }
+
+  p {
+    @include media($gtMobile){
+      margin: 2em 10em 0 10em;
+    }
+    margin: 2em 1em 0 1em;
+    font-size:1.5em;
+  }
+}
+
+#portfolio-container {
+  @include outer-container;
+  margin-top: 2em;
+}
+.portfolio-item {
+  @include media($gtMobile){
+    @include span-columns(6);
+    @include omega(2n);
+    @include shift(0);
+  }
+  @include span-columns(10);
+  @include shift(1);
+  background-color:$green;
+  margin-bottom: 2em;
+  text-align:center;
+  padding: 2em;
+  p {
+    margin: 0;
+    text-align:justify;
+    font-size: 1em;
+  }
+  /*&:nth-child(even) {
+    background-color:$blue;
+  } */
+}
+
+.portfolio-image {
+  background-color: gray;
+  width: 75%;
+  height: 200px;
+  display:inline-block;
+}
+
+.portfolio-links {
+  list-style:none;
+  padding:0;
+  li {
+    display:inline-block;
+    background-color: $brown;
+    color:white;
+    padding:0.5em;
+    &:hover {
+      background-color:$blue;
+    }
+  }
+  a {
+    color:white;
+  }
+}
+
+.portfolio-skills {
+  list-style:none;
+  padding:0;
+  text-align:left;
+  font-size: 0.75em;
+  margin-bottom:0;
+  li {
+    display:inline-block;
+    border: 1px solid gray;
+    padding:0.5em;
+    &:first-child{
+      border:none;
+    }
+  }
+}
+
+.about-skills {
+  display:inline-block;
+  margin: 0em 2em;
+  i {
+    font-size: 4em;
+    color: $cream;
+  }
+  h2 {
+      font-family:'Nova Mono', monospace;
+      color:$brown;
+  }
+}
+
+#skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
