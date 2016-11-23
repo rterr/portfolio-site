@@ -127,9 +127,8 @@ section {
 }
 .portfolio-item {
   @include media($gtMobile){
-    @include span-columns(6);
-    @include omega(2n);
-    @include shift(0);
+    @include span-columns(10);
+    @include shift(1);
   }
   @include span-columns(10);
   @include shift(1);
@@ -148,10 +147,15 @@ section {
 }
 
 .portfolio-image {
-  background-color: gray;
+  @include media($gtMobile){
+    width: 45%;
+    float:left;
+    @include clearfix;
+    margin-right: 1em;
+  }
   width: 75%;
-  height: 200px;
   display:inline-block;
+  > img {max-width:100%;}
 }
 
 .portfolio-links {
@@ -188,8 +192,10 @@ section {
 }
 
 .about-skills {
+  @include media($gtMobile){
   display:inline-block;
-  margin: 0em 2em;
+  margin: 0em 2em;}
+  display:block;
   i {
     font-size: 4em;
     color: $cream;
@@ -201,7 +207,7 @@ section {
 }
 
 #skills {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align:center;
+  margin: 0px 2em;
+  display:block;
 }
