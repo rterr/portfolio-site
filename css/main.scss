@@ -18,7 +18,7 @@ body {
   }
   font-family:sans-serif;
   background-color:$cream;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Dosis', sans-serif;
   margin:0;
   background-image: url('../assets/bg_paper.png');
 }
@@ -109,6 +109,7 @@ header{
     padding:1em 1em;
     vertical-align: top;
     text-align:center;
+    font-size:1em;
     h1 {
       @include media($gtMobile){
         font-size: 4em;
@@ -136,7 +137,7 @@ a {
 }
 
 h1 {
-  font-family:'Volkhov', monospace;
+  font-family:'Old Standard TT', serif;
 }
 section {
   display:block;
@@ -182,13 +183,13 @@ section {
   text-align:center;
   padding: 2em;
   h2 {
-    font-family:Volkhov;
+    font-family:Old Standard TT;
     font-size:1.5em;
   }
   p {
     margin: 0;
     text-align:justify;
-    font-size: 1em;
+    font-size: 1.15em;
   }
   /*&:nth-child(even) {
     background-color:$blue;
@@ -250,13 +251,13 @@ section {
     color: $cream;
   }
   h2 {
-      font-family:'Volkhov', monospace;
+      font-family:'Old Standard TT', serif;
       color:$red;
   }
 }
 
 #skills {
   text-align:center;
-  margin: 0px 2em;
+  margin: 1em 2em;
   display:block;
 }
