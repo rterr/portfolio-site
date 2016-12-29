@@ -6,23 +6,30 @@ html {
 
 body {
   font-family: sans-serif;
-  background-color: #f9eed3;
-  font-family: 'Dosis', sans-serif;
+  background-color: #d1dbe6;
+  font-family: 'Raleway', sans-serif;
   margin: 0;
   background-image: url("../assets/bg_paper.png"); }
   @media screen and (min-width: 60em) {
     body {
       margin: 2em; } }
 
-#border-top, #border-bottom, #border-left, #border-right {
+#border-bottom,
+#border-left,
+#border-right,
+#border-top {
   display: none;
-  background: #668b8a;
+  background: #144e7c;
   position: fixed; }
   @media screen and (min-width: 60em) {
-    #border-top, #border-bottom, #border-left, #border-right {
+    #border-bottom,
+    #border-left,
+    #border-right,
+    #border-top {
       display: block; } }
 
-#border-left, #border-right {
+#border-left,
+#border-right {
   top: 0;
   bottom: 0;
   width: 2em; }
@@ -33,7 +40,8 @@ body {
 #border-right {
   right: 0; }
 
-#border-top, #border-bottom {
+#border-bottom,
+#border-top {
   left: 0;
   right: 0;
   height: 2em; }
@@ -48,7 +56,7 @@ header {
   text-align: center;
   width: 100%;
   vertical-align: center;
-  padding: 2em 0em; }
+  padding: 2em 0; }
   @media screen and (min-width: 60em) {
     header {
       height: 14em;
@@ -70,7 +78,7 @@ header {
           display: block; } }
     header nav ul {
       width: 100%;
-      padding: 0px;
+      padding: 0;
       display: table;
       list-style: none;
       margin: 0; }
@@ -86,22 +94,22 @@ header {
       box-sizing: border-box;
       display: inline-block;
       width: 6em;
-      padding: 2em 0em;
-      background-color: #a62e2e;
+      padding: 2em 0;
+      background-color: #827a6f;
       text-align: center;
-      box-shadow: 0.25em 0.25em 0px 0px rgba(0, 0, 0, 0.5); }
+      box-shadow: 0.25em 0.25em 0 0 rgba(0, 0, 0, 0.5); }
       @media screen and (min-width: 60em) {
         header nav li {
           width: 5em;
           float: left;
-          padding: 4.5em 0em; } }
+          padding: 4.5em 0; } }
       header nav li:hover {
-        background-color: #475c5b; }
+        background-color: #728398; }
   header #header-title {
     z-index: 5;
     display: inline-block;
     color: #101010;
-    padding: 1em 1em;
+    padding: 1em;
     vertical-align: top;
     text-align: center;
     font-size: 1em; }
@@ -112,46 +120,78 @@ header {
     header #header-title h1 {
       font-size: 3em;
       margin: 0;
-      line-height: 1em; }
+      line-height: 1em;
+      text-transform: uppercase; }
       @media screen and (min-width: 60em) {
         header #header-title h1 {
           font-size: 4em; } }
+    header #header-title span {
+      text-transform: uppercase;
+      font-family: 'montserrat',sans-serif; }
   header svg {
     position: absolute;
     z-index: -1;
     top: -60px;
     left: -30px; }
   header #header-circle {
-    fill: #d9ad57; }
+    fill: #c7a16a; }
 
 a {
   text-decoration: none;
-  color: white; }
+  color: #f4f2ee; }
 
 h1 {
-  font-family: 'Old Standard TT', serif; }
+  font-family: 'Montserrat', sans-serif; }
 
 section {
   display: block;
-  padding: 2em 0em; }
+  padding: 4em 0; }
   section#about {
-    background-color: #c6ba9b; }
+    background-color: #f4f2ee; }
   section#contact {
-    background-color: #a47c64;
+    background-color: #827a6f;
     padding-bottom: 5em; }
+    section#contact h1 {
+      color: #d1dbe6; }
+    section#contact a:hover {
+      color: #bcb7af; }
   section h1 {
-    background-color: #475c5b;
-    box-shadow: 0.25em 0.25em 0px 0px rgba(0, 0, 0, 0.5);
     display: inline;
     padding: 0.25em 1em;
-    color: white;
-    font-size: 2em; }
+    color: #728398;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-family: 'Montserrat'; }
   section p {
-    margin: 2em 1em 0 1em;
-    font-size: 1.5em; }
+    margin: 2em 1em 0;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    text-align: justify; }
     @media screen and (min-width: 60em) {
       section p {
-        margin: 2em 10em 0 10em; } }
+        margin: 2em 10em 0; } }
+
+.about-skills {
+  display: block; }
+  @media screen and (min-width: 60em) {
+    .about-skills {
+      display: inline-block;
+      margin: 2em; } }
+  .about-skills i {
+    font-size: 4em;
+    color: #728398; }
+  .about-skills h2 {
+    font-family: 'Montserrat',sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.15em;
+    color: #bcb7af; }
+
+#skills {
+  text-align: center;
+  margin: 1em 2em;
+  display: block; }
 
 #portfolio-container {
   max-width: 1200px;
@@ -169,13 +209,10 @@ section {
   margin-right: 2.35765%;
   width: 82.94039%;
   margin-left: 8.5298%;
-  background-color: #c6ba9b;
+  background-color: #bcb7af;
   margin-bottom: 2em;
   text-align: center;
-  padding: 2em;
-  /*&:nth-child(even) {
-    background-color:$blue;
-  } */ }
+  padding: 2em; }
   @media screen and (min-width: 60em) {
     .portfolio-item {
       float: left;
@@ -188,12 +225,14 @@ section {
   .portfolio-item:last-child {
     margin-right: 0; }
   .portfolio-item h2 {
-    font-family: Old Standard TT;
-    font-size: 1.5em; }
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 0.15em;
+    text-transform: uppercase; }
   .portfolio-item p {
     margin: 0;
     text-align: justify;
-    font-size: 1.15em; }
+    font-size: 1em; }
 
 .portfolio-image {
   width: 75%;
@@ -212,14 +251,15 @@ section {
 
 .portfolio-links {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  text-transform: uppercase; }
   .portfolio-links li {
     display: inline-block;
-    background-color: #a47c64;
+    background-color: #827a6f;
     color: white;
     padding: 0.5em; }
     .portfolio-links li:hover {
-      background-color: #668b8a; }
+      background-color: #728398; }
   .portfolio-links a {
     color: white; }
 
@@ -235,23 +275,5 @@ section {
     padding: 0.5em; }
     .portfolio-skills li:first-child {
       border: none; }
-
-.about-skills {
-  display: block; }
-  @media screen and (min-width: 60em) {
-    .about-skills {
-      display: inline-block;
-      margin: 0em 2em; } }
-  .about-skills i {
-    font-size: 4em;
-    color: #f9eed3; }
-  .about-skills h2 {
-    font-family: 'Old Standard TT', serif;
-    color: #a62e2e; }
-
-#skills {
-  text-align: center;
-  margin: 1em 2em;
-  display: block; }
 
 /*# sourceMappingURL=main.css.map */
