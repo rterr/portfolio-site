@@ -6,11 +6,20 @@
     <title>Rowena Terrado | Full Stack Web Developer</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' />
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' />
+    <link href='https://fonts.googleapis.com/css?family=Raleway|Montserrat' rel='stylesheet' />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="./fancybox/source/jquery.fancybox.css?v=2.1.6" type="text/css" media="screen" />
+    <script type="text/javascript" src="./fancybox/source/jquery.fancybox.pack.js?v=2.1.6"></script>
+    <link rel="stylesheet" href="./fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
 </head>
 
 <body>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".fancybox").fancybox();
+    });
+  </script>
     <header id="home">
         <svg width="300" height="300">
         <circle id="header-circle" cx="150" cy="150" r="150" />
@@ -174,6 +183,28 @@
                     <li>HTML</li>
                     <li>CSS</li>
                 </ul>
+            </div>
+
+            <div class="portfolio-item">
+                <h2>Illustration: Overwatch</h2>
+                <p>"Retro pop"-styled fan art of characters from Blizzard's hit video game, <i>Overwatch</i>.</p>
+                <ul class="portfolio-skills">
+                    <li>Programs/tools used:</li>
+                    <li>Photoshop</li>
+                    <li>Clip Studio Paint</li>
+                    <li>Wacom Intuos3</li>
+                </ul>
+
+                <div class="portfolio-gallery">
+                  <a href="./assets/illust_ow_01.png" class="fancybox" rel="illust-ow"><img src="./assets/illust_ow_01t.png"></a>
+                  <a href="./assets/illust_ow_02.png" class="fancybox" rel="illust-ow"><img src="./assets/illust_ow_02t.png"></a>
+                  <a href="./assets/illust_ow_03.png" class="fancybox" rel="illust-ow"><img src="./assets/illust_ow_03t.png"></a>
+                  <a href="./assets/illust_ow_04.png" class="fancybox" rel="illust-ow"><img src="./assets/illust_ow_04t.png"></a><br />
+                  <a href="./assets/illust_ow_05.png" class="fancybox" rel="illust-ow"><img src="./assets/illust_ow_05t.png"></a>
+                  <a href="./assets/illust_ow_06.png" class="fancybox" rel="illust-ow"><img src="./assets/illust_ow_06t.png"></a>
+                  <a href="./assets/illust_ow_07.png" class="fancybox" rel="illust-ow"><img src="./assets/illust_ow_07t.png"></a>
+                  <a href="./assets/illust_ow_08.png" class="fancybox" rel="illust-ow"><img src="./assets/illust_ow_08t.png"></a>
+                </div>
             </div>
 
         </div>

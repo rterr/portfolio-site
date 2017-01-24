@@ -319,6 +319,11 @@ section {
 
         &:first-child {
             border: none;
+            padding:0 0.5em 0 0;
         }
     }
+}
+
+.portfolio-gallery {
+  margin-top:1em;
 }

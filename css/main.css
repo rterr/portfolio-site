@@ -274,6 +274,10 @@ section {
     border: 1px solid gray;
     padding: 0.5em; }
     .portfolio-skills li:first-child {
-      border: none; }
+      border: none;
+      padding: 0 0.5em 0 0; }
+
+.portfolio-gallery {
+  margin-top: 1em; }
 
 /*# sourceMappingURL=main.css.map */
